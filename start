@@ -1,0 +1,108 @@
+### HTML и CSS для сайта
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изучение английского языка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 150px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Слова и фразы на английском языке</h1>
+    <div class="card-container">
+        <div class="card">
+            <img src="apple.jpg" alt="Яблоко">
+            <h2>Apple</h2>
+            <p>Яблоко</p>
+        </div>
+        <div class="card">
+            <img src="dog.jpg" alt="Собака">
+            <h2>Dog</h2>
+            <p>Собака</p>
+        </div>
+        <div class="card">
+            <img src="cat.jpg" alt="Кошка">
+            <h2>Cat</h2>
+            <p>Кошка</p>
+        </div>
+        <div class="card">
+            <img src="book.jpg" alt="Книга">
+            <h2>Book</h2>
+            <p>Книга</p>
+        </div>
+        <div class="card">
+            <img src="house.jpg" alt="Дом">
+            <h2>House</h2>
+            <p>Дом</p>
+        </div>
+        <div class="card">
+            <img src="car.jpg" alt="Машина">
+            <h2>Car</h2>
+            <p>Машина</p>
+        </div>
+        <div class="card">
+            <img src="tree.jpg" alt="Дерево">
+            <h2>Tree</h2>
+            <p>Дерево</p>
+        </div>
+        <div class="card">
+            <img src="water.jpg" alt="Вода">
+            <h2>Water</h2>
+            <p>Вода</p>
+        </div>
+        <div class="card">
+            <img src="sun.jpg" alt="Солнце">
+            <h2>Sun</h2>
+            <p>Солнце</p>
+        </div>
+        <div class="card">
+            <img src="ball.jpg" alt="Мяч">
+            <h2>Ball</h2>
+            <p>Мяч</p>
+        </div>
+    </div>
+    <h2>Словосочетания</h2>
+    <ul>
+        <li>Good morning - Доброе утро</li>
+        <li>How are you? - Как дела?</li>
+        <li>I love you - Я тебя люблю</li>
+        <li>Thank you - Спасибо</li>
+        <li>See you later - Увидимся позже</li>
+        <li>What is your name? - Как тебя зовут?</li>
+        <li>I am sorry - Я извиняюсь</li>
+        <li>Where is the bathroom? - Где туалет?</li>
+        <li>Can you help me? - Можешь мне помочь?</li>
+        <li>Have a nice day - Хорошего дня!</li>
+    </ul>
+</body>
+</html>
