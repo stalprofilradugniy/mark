@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Учим вьетнамский!</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Учим вьетнамский язык с помощью карточек">
+    <meta name="keywords" content="вьетнамский, язык, карточки, обучение">
+    <title>Учим вьетнамский!</title>
     <style>
         .card {
             border: 1px solid black;
@@ -11,21 +14,32 @@
             width: 200px;
             display: inline-block;
             text-align: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+                margin: 5px 0;
+            }
         }
     </style>
 </head>
 <body>
     <h1>Привет, юный друг! Давай учить вьетнамский!</h1>
 
-    <div id="cards">
-        </div>
+    <div id="cards"></div>
 
     <script>
         const words = [
             { vietnamese: "Xin chào", russian: "Привет" },
             { vietnamese: "Cảm ơn", russian: "Спасибо" },
             { vietnamese: "Tạm biệt", russian: "Пока" },
-            { vietnamese: "Vâng", russian: "Да" (вежливо) },
+            { vietnamese: "Vâng", russian: "Да (вежливо)" },
             { vietnamese: "Không", russian: "Нет" },
             { vietnamese: "Tôi", russian: "Я" },
             { vietnamese: "Bạn", russian: "Ты" },
@@ -71,7 +85,6 @@
             { vietnamese: "Yêu", russian: "Любить" },
             { vietnamese: "Chào buổi sáng", russian: "Доброе утро" },
             { vietnamese: "Chào buổi tối", russian: "Добрый вечер" }
-
         ];
 
         const cardsDiv = document.getElementById("cards");
@@ -79,10 +92,9 @@
         words.forEach(word => {
             const card = document.createElement("div");
             card.className = "card";
-            card.innerHTML = `<h3>${word.vietnamese}</h3><p>${word.russian}</p>`;
+            card.innerHTML = <h3>${word.vietnamese}</h3><p>${word.russian}</p>;
             cardsDiv.appendChild(card);
         });
     </script>
-
 </body>
 </html>
